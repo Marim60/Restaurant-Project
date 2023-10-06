@@ -7,7 +7,9 @@ using System.Threading.Tasks;
 
 namespace UnitOfWork.Models
 {
-    internal class Order
+    [Table("Order")]
+
+    public class Order
     {
         public int Id { get; set; }
         public DateTime OrderDate { get; set; }
@@ -16,8 +18,8 @@ namespace UnitOfWork.Models
         public int RestaurantId { get; set; }
         public int OrderStatusId { get; set; }
 
-        public virtual Restaurant Restaurant { get; set; }
-        public virtual OrderStatus OrderStatus { get; set; }
+        public virtual Restaurant? Restaurant { get; set; }
+        public virtual OrderStatus? OrderStatus { get; set; }
         public virtual Transaction? Transaction { get; set; }
 
     }

@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <None Remove="Models\Order.cs~RF50691947.TMP" />
+    <None Remove="Models\Order.cs~RF5a6f80ba.TMP" />
   </ItemGroup>
 
   <ItemGroup>
